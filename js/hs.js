@@ -29,7 +29,7 @@ var Card = function( obj, settings ){
   this.focus = false;
   this.init();
 
-}
+};
 
 
 
@@ -209,7 +209,7 @@ Card.prototype.run = function()
   loop = this.run.bind( this );
   if( this.running )
     requestAnimationFrame( loop );
-}
+};
 
 
 
@@ -237,7 +237,7 @@ var Stars = function( settings ){
 
   this.init();
 
-}
+};
 
 Stars.prototype.init = function()
 { 
@@ -332,7 +332,7 @@ Stars.prototype.buildStar = function()
 
   };
 
-}
+};
 
 Stars.prototype.addStar = function(e)
 {
@@ -395,7 +395,7 @@ Stars.prototype.update = function() {
 
     
 
-  };
+  }
 
 };
 
@@ -430,7 +430,7 @@ Stars.prototype.draw = function() {
     
     this.ctx.restore();
 
-  };
+  }
 
   this.ctx.globalCompositeOperation = "source-over";
 
@@ -450,7 +450,7 @@ Stars.prototype.start = function()
   this.running = true;
   this.run();
 
-}
+};
 Stars.prototype.stop = function()
 {
 
@@ -465,7 +465,7 @@ Stars.prototype.run = function()
   loop = this.run.bind( this );
   if( this.running )
     requestAnimationFrame( loop );
-}
+};
 
 
 
